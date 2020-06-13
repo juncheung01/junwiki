@@ -1,0 +1,11 @@
+created: 20200613115505195
+creator: jun
+modified: 20200613122715044
+modifier: jun
+title: 双纵坐标函数plotyy
+tmap.id: c1521cfc-6781-4f0d-b846-876f001c1e26
+type: text/vnd.tiddlywiki
+
+在Matlab中，如果需要绘制出具有不同纵坐标标度的两个图形，可以使用plotyy函数，它能把具有不同量纲，不同数量级的两个函数绘制在同一个坐标中，有利于图形数据的对比分析。使用格式为：plotyy(x1,y1,x2,y2)
+
+x1,y1对应一条曲线，x2,y2对应另一条曲线。横坐标的标度相同，纵坐标有两个，左边的对应x1,y1数据对，右边的对应x2,y2。

@@ -1,0 +1,10 @@
+created: 20200613082422353
+creator: jun
+modified: 20200613083156269
+modifier: jun
+tags: 元胞自动机实现级联失效 画图
+title: 画图出现的问题
+tmap.id: dcb74e75-ac36-4674-b7ad-ef2f63c11e05
+type: text/vnd.tiddlywiki
+
+matplotlib 自动地把y按从小到大排序之后画出来了

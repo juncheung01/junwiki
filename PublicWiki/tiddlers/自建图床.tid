@@ -1,0 +1,22 @@
+created: 20200613085517964
+creator: jun
+modified: 20200613113539532
+modifier: jun
+tags: 技术细节
+title: 自建图床
+tmap.id: b77697ec-465f-4680-8b85-6b10a83efa44
+type: text/vnd.tiddlywiki
+
+# [[Lychee]] 是一个开源免费的基于 PHP 的图片管理系统，支持 Docker 部署，可以直接当做图床来用，[[Lychee]]还支持很多扩展。 
+
+# 树洞外链 是一款免费开源的 PHP 外链网盘系统，界面简洁友好，支持七牛、本地、远程、阿里云OSS、又拍云五种储存方式，支持多用户系统，多上传方案策略。
+
+# 上传工具：
+
+iPic 是 macOS 上口碑最好的图床工具
+
+MWeb 支持七牛、imgur、Google Photos，还支持自定义图床，写作的时候只需要将图片拖进来，写作完成一键上传所有图片，也很方便。
+
+Dropzone 3 也可以通过 七牛插件 来支持上传图片
+
+MPic 目测是 Windows 上唯一的图床工具了，目前只支持七牛，把图片拖拽到软件窗口中就能上传。

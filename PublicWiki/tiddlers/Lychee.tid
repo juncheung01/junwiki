@@ -1,0 +1,9 @@
+created: 20200613112233325
+creator: jun
+modified: 20200613115008227
+modifier: jun
+title: Lychee
+tmap.id: edc93f68-5763-48ee-b8c2-3377abac3b80
+type: text/vnd.tiddlywiki
+
+在天翼云主机上搭建了图床，使用了80X86的docker镜像，自带了sql数据库，省去了很多麻烦。一个图片例子[[fig1]]

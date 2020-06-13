@@ -1,0 +1,10 @@
+created: 20200613082649088
+creator: jun
+modified: 20200613082746222
+modifier: jun
+tags: 技术细节
+title: vscode上git插件
+tmap.id: 37e7edd5-e3cb-4305-8aaa-481f6cdde1b9
+type: text/vnd.tiddlywiki
+
+简单地用这个插件点击的时候push老是出错，用命令行就没有问题
