@@ -26,9 +26,9 @@
         "$:/config/Navigation/UpdateAddressBar": {
             "title": "$:/config/Navigation/UpdateAddressBar",
             "created": "20190419034459572",
-            "creator": "林一二",
+            "creator": "jun",
             "modified": "20200409033736422",
-            "modifier": "林一二",
+            "modifier": "jun",
             "type": "text/vnd.tiddlywiki",
             "text": "permaview"
         },
@@ -56,9 +56,9 @@
         "$:/config/Plugins/Disabled/$:/plugins/sycom/g-analytics": {
             "title": "$:/config/Plugins/Disabled/$:/plugins/sycom/g-analytics",
             "created": "20190823032141720",
-            "creator": "Lin Onetwo - 林一二",
+            "creator": "Lin Onetwo - jun",
             "modified": "20200409033736354",
-            "modifier": "Lin Onetwo - 林一二",
+            "modifier": "Lin Onetwo - jun",
             "type": "text/vnd.tiddlywiki",
             "text": "no"
         },
@@ -86,9 +86,9 @@
         "$:/config/RelinkOnRename": {
             "title": "$:/config/RelinkOnRename",
             "created": "20200408113649017",
-            "creator": "Lin Onetwo - 林一二",
+            "creator": "Lin Onetwo - jun",
             "modified": "20200410130837602",
-            "modifier": "Lin Onetwo - 林一二",
+            "modifier": "Lin Onetwo - jun",
             "type": "text/vnd.tiddlywiki",
             "text": "yes"
         },
@@ -119,43 +119,43 @@
             "text": "true",
             "type": "bool",
             "created": "20200605103335671",
-            "creator": "林一二",
+            "creator": "jun",
             "modified": "20200605103335685",
-            "modifier": "林一二"
+            "modifier": "jun"
         },
         "$:/config/codemirror/keyMap": {
             "title": "$:/config/codemirror/keyMap",
             "text": "sublime\n",
             "type": "string",
             "created": "20200605103258370",
-            "creator": "林一二",
+            "creator": "jun",
             "modified": "20200605103258386",
-            "modifier": "林一二"
+            "modifier": "jun"
         },
         "$:/language": {
             "title": "$:/language",
             "created": "20200605100046781",
-            "creator": "林一二",
+            "creator": "jun",
             "modified": "20200605100046868",
-            "modifier": "林一二",
+            "modifier": "jun",
             "type": "text/vnd.tiddlywiki",
             "text": "$:/languages/zh-Hans"
         },
         "$:/theme": {
             "title": "$:/theme",
             "created": "20200605100014910",
-            "creator": "林一二",
+            "creator": "jun",
             "modified": "20200605100014964",
-            "modifier": "林一二",
+            "modifier": "jun",
             "type": "text/vnd.tiddlywiki",
             "text": "$:/themes/linonetwo/itonnote"
         },
         "$:/themes/tiddlywiki/vanilla/options/sidebarlayout": {
             "title": "$:/themes/tiddlywiki/vanilla/options/sidebarlayout",
             "created": "20200605100438813",
-            "creator": "林一二",
+            "creator": "jun",
             "modified": "20200605100438836",
-            "modifier": "林一二",
+            "modifier": "jun",
             "type": "text/vnd.tiddlywiki",
             "text": "fluid-fixed"
         },
@@ -198,18 +198,18 @@
         "$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/home": {
             "title": "$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/home",
             "created": "20200408133027695",
-            "creator": "Lin Onetwo - 林一二",
+            "creator": "Lin Onetwo - jun",
             "modified": "20200409033736388",
-            "modifier": "Lin Onetwo - 林一二",
+            "modifier": "Lin Onetwo - jun",
             "type": "text/vnd.tiddlywiki",
             "text": "show"
         },
         "$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/more-page-actions": {
             "title": "$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/more-page-actions",
             "created": "20200408133032024",
-            "creator": "Lin Onetwo - 林一二",
+            "creator": "Lin Onetwo - jun",
             "modified": "20200409033736377",
-            "modifier": "Lin Onetwo - 林一二",
+            "modifier": "Lin Onetwo - jun",
             "type": "text/vnd.tiddlywiki",
             "text": "show"
         },

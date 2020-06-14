@@ -1,0 +1,13 @@
+created: 20200614015841251
+creator: jun
+modified: 20200614021035745
+modifier: 林一二
+tags: matlab画图
+title: matlab 双y轴画多条线
+tmap.id: a5845c1a-0874-483a-8df7-fbe8332e2d7d
+type: text/x-markdown
+
+[Ax,h1,h2]=plotyy(x,[y1;y3;y5],x,[y2;y4;y6]);
+
+y1，y3，y5在左边，y2，y4，y6在右边
+![](http://203.176.94.158:8000/uploads/big/cdc45d825220714c0319890b5c901f25.jpg)
