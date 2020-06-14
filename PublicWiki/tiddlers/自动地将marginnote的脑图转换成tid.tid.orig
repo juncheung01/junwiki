@@ -1,14 +1,10 @@
-created: 20200613122835077
-creator: jun
-<<<<<<< HEAD
-modified: 20200613124927808
-modifier: jun
-title: 自动地将marginnote的脑图转换成tid
-tmap.id: e6d54bd4-56da-4ca0-953b-da633d99ad94
-=======
-modified: 20200613143310901
-modifier: jun
-title: 自动地将marginnote的脑图转换成tid
-tmap.id: 9d28590c-1f04-4c32-b0cd-f0b7205879f1
->>>>>>> a175bcc9660002833f793eec4203411299bdfdac
-type: text/vnd.tiddlywiki
+[
+    {
+        "created": "20200614030651189",
+        "text": "created: 20200613122835077\ncreator: jun\n<<<<<<< HEAD\nmodified: 20200613124927808\nmodifier: jun\ntitle: 自动地将marginnote的脑图转换成tid\ntmap.id: e6d54bd4-56da-4ca0-953b-da633d99ad94\n=======\nmodified: 20200613143310901\nmodifier: jun\ntitle: 自动地将marginnote的脑图转换成tid\ntmap.id: 9d28590c-1f04-4c32-b0cd-f0b7205879f1\n>>>>>>> a175bcc9660002833f793eec4203411299bdfdac\ntype: text/vnd.tiddlywiki",
+        "type": ".orig",
+        "title": "C:\\Users\\jc\\Documents\\tool\\wiki\\junwiki\\PublicWiki\\tiddlers\\自动地将marginnote的脑图转换成tid.tid.orig",
+        "tmap.id": "f6669d0b-841c-4841-9c4a-6d4090da4ddd",
+        "modified": "20200614030651189"
+    }
+]
