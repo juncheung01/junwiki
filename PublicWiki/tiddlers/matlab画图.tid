@@ -1,6 +1,6 @@
 created: 20200613083919860
 creator: jun
-modified: 20200613115714346
+modified: 20200614053844101
 modifier: jun
 tags: 画图
 title: matlab画图
@@ -35,4 +35,4 @@ type: text/vnd.tiddlywiki
 |! 3 |-. 点划线| r红色| | |
 |! 4 |-- 双划线| c青色| | |
 
-*  [[双纵坐标函数plotyy]]
+*  [[双纵坐标]]

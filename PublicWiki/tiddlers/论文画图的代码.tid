@@ -1,0 +1,51 @@
+created: 20200614080101586
+creator: jun
+modified: 20200614080238946
+modifier: jun
+tags: matlab画图
+title: 论文画图的代码
+tmap.id: b2a2aca6-5955-4660-9f9c-72a49de20af0
+type: text/vnd.tiddlywiki
+
+
+```
+clc
+clear all 
+close all
+x=1:13
+y1=[50    48    47    44    39    36    31    30    30    21    15     4     0 ];
+y2=[50    48    47    43    38    35    30    29    29    21    13     1     1 ];
+y3=[50    49    43    38    33    21    10     1    0 	  0	    0      0	 0 ];
+y4=[50    49    43    38    33    21     8     1    1     1     1      1      1];
+y5=[50    49    47    41    28    15     3     0     0    0     0      0      0];
+y6=[50    49    47    41    27    15     1     1     1    1     1       1      1];
+
+figure;
+xlabel('steps');
+
+
+yyaxis left;
+
+
+set(gca,'ycolor','r');
+%set(gca,'xlim',[1,15])
+h1=plot(x,y1,'--r^','LineWidth',1);
+hold on ;
+h3=plot(x,y3,'--rs','LineWidth',1);
+h5=plot(x,y5,'--rv','LineWidth',1);
+ylabel("number of surviving nodes")
+
+yyaxis right;
+
+%set(gca,'ylim',[1,50])%将y轴上的取值范围设置为[y1,y2]
+ylabel("size of max component")
+set(gca,'ycolor','b');
+h2=plot(x,y2,'-b^','LineWidth',0.5);
+h4=plot(x,y4,'-bs','LineWidth',0.5);
+h6=plot(x,y6,'-bv','LineWidth',0.5);
+legend('random failure','by degree','by betweenness','random failure','by degree','by betweenness')
+
+```
+
+图
+
