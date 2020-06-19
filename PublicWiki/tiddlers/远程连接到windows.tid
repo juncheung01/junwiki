@@ -1,0 +1,48 @@
+created: 20200618075319245
+creator: jun
+modified: 20200618080518652
+modifier: jun
+tags: 技术细节 windows ssh
+title: 远程连接到windows
+tmap.id: 81ed1149-19ed-4ee3-91a2-da3901b6491e
+type: text/vnd.tiddlywiki
+
+在win上使用powershell的命令先安装openssh的服务端（需要管理员权限）
+
+检查状态
+
+
+```
+Get-WindowsCapability -Online | ?Name -like 'OpenSSH*'
+```
+
+安装
+
+
+```
+Add-WindowsCapability -Online -Name OpenSSH.Server~~~~0.0.1.0
+```
+
+开启服务
+
+
+```
+Start-Service sshd
+```
+
+
+设置服务自启动
+
+
+```
+Set-Service -Name sshd -StartupType 'Automatic
+```
+
+
+如果防火墙设置好了，查看下是否生效
+
+
+```
+Get-NetFirewallRule -name *ssh*
+```
+
