@@ -1,0 +1,10 @@
+created: 20200620012847542
+creator: jun
+modified: 20200722015823327
+modifier: jun
+tags: 想法
+title: 思维导图js
+tmap.id: 38378335-a86f-4616-b2b2-47982bb6a500
+type: text/vnd.tiddlywiki
+
+一个思维导图的核心js库[[Mind elixir|https://github.com/ssshooter/mind-elixir-core/blob/master/readme.cn.md]]，或许可以借鉴到[[将marginnote的脑图转换成tid]]

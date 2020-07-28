@@ -1,0 +1,18 @@
+created: 20200713021838160
+creator: jun
+modified: 20200722013427336
+modifier: jun
+tags: 技术细节 boost库
+title: 编译boost库
+tmap.id: 65540a31-f75c-4beb-a6a2-2237641400c9
+type: text/vnd.tiddlywiki
+
+先运行bootstrap.bat文件
+
+再执行
+
+```bash
+.\b2.exe stage --with-date_time link=static runtime-link=shared threading=multi
+```
+
+在vs中项目属性->链接器->附加库目录 中添加上一步生成的lib文件的目录

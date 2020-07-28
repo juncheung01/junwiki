@@ -1,0 +1,12 @@
+created: 20200722125021481
+creator: jun
+modified: 20200722150324193
+modifier: jun
+tags: 当前
+title: 模拟存在问题
+tmap.id: 489c4e73-3312-49f1-897b-aaeeaf4cc976
+type: text/vnd.tiddlywiki
+
+边（6,7）时，节点失效2300多，但是边失效数目却几百
+
+边失效导致的节点失效，这些节点不会再导致边失效？

@@ -1,0 +1,10 @@
+[
+    {
+        "created": "20200614110335365",
+        "text": "",
+        "type": "text/vnd.tiddlywiki",
+        "title": "$:/plugins/felixhayashi/tiddlymap/graph/views/工作/filter/nodes",
+        "modified": "20200723134132198",
+        "filter": " [field:tmap.id[6cd2b2ca-aed2-425f-9a7d-70afeaf396c4]] [field:tmap.id[a905e2f5-65ab-4a4a-90d7-9e8c6b5855da]] [field:tmap.id[1d2ae165-5685-4580-bbb6-3f70b81b9f3c]] [field:tmap.id[8d148524-5fd0-4ea6-ac78-b1c441cb40cf]] [field:tmap.id[d3fbdc9c-8242-440a-acac-e8d7f5c1258a]] "
+    }
+]

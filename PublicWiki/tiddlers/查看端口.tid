@@ -1,0 +1,10 @@
+created: 20200620122648857
+creator: jun
+modified: 20200620122713889
+modifier: jun
+tags: ubuntu命令
+title: 查看端口
+tmap.id: 1aeafd21-8788-4c28-971d-45e27c097449
+type: text/vnd.tiddlywiki
+
+lsof -i:8080 查看8080端口

@@ -1,0 +1,14 @@
+created: 20200712122640498
+creator: jun
+modified: 20200721114507551
+modifier: jun
+tags: 
+title: c++序列化
+tmap.id: 34fb049e-72c1-4fe3-adfd-02a97a70b6d4
+type: text/vnd.tiddlywiki
+
+Boos::Serialization
+
+[[Boost - 序列化 (Serialization)(CSDN)|https://blog.csdn.net/zj510/article/details/8105408]]实现类的序列化
+
+简单地使用库序列化stl：[[stl map用boost库序列化]]

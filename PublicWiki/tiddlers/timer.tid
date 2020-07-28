@@ -1,0 +1,15 @@
+created: 20200714074631053
+creator: jun
+modified: 20200714075034081
+modifier: jun
+tags: 时间相关 boost库
+title: timer
+tmap.id: 1fbbea4f-140c-4ea6-a07d-ae6d03f5e3db
+type: text/vnd.tiddlywiki
+
+```cpp
+#include <boost/time.hpp>
+timer t;
+t.elapsed();//记录程序运行时间
+```
+

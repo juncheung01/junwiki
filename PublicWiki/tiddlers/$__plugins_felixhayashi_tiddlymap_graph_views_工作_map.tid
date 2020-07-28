@@ -1,0 +1,31 @@
+created: 20200614110344169
+modified: 20200723134146798
+title: $:/plugins/felixhayashi/tiddlymap/graph/views/工作/map
+type: text/vnd.tiddlywiki
+
+{
+ "6cd2b2ca-aed2-425f-9a7d-70afeaf396c4": {
+  "x": -151,
+  "y": -229
+ },
+ "a905e2f5-65ab-4a4a-90d7-9e8c6b5855da": {
+  "x": 7,
+  "y": -338
+ },
+ "1d2ae165-5685-4580-bbb6-3f70b81b9f3c": {
+  "x": -17,
+  "y": -430
+ },
+ "8d148524-5fd0-4ea6-ac78-b1c441cb40cf": {
+  "x": -227,
+  "y": -565
+ },
+ "d3fbdc9c-8242-440a-acac-e8d7f5c1258a": {
+  "x": -290,
+  "y": -354
+ },
+ "ae1546b2-0db6-4f31-aecf-877242790ed8": {
+  "x": -180,
+  "y": -597
+ }
+}

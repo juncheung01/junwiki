@@ -1,8 +1,12 @@
 created: 20200613081852042
 creator: jun
-modified: 20200613081900480
+modified: 20200724095247994
 modifier: jun
 tags: Index
 title: 工作
 tmap.id: d3fbdc9c-8242-440a-acac-e8d7f5c1258a
 type: text/vnd.tiddlywiki
+
+工作中会用到的工具，想法等
+
+<$macrocall $name="locator-view" baseTitle=<<currentTiddler>> />

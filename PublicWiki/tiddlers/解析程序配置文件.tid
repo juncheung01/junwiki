@@ -1,0 +1,115 @@
+created: 20200723130308690
+creator: jun
+modified: 20200723131653484
+modifier: jun
+tags: 当前
+title: 解析程序配置文件
+tmap.id: 1d2ae165-5685-4580-bbb6-3f70b81b9f3c
+type: text/vnd.tiddlywiki
+
+! boost::property_tree
+
+property_tree可以解析xml，json，ini，info等格式的数据，用property_tree解析这几种格式使用方法很相似。
+
+解析json很简单，命名空间为boost::property_tree，reson_json函数将文件流、字符串解析到ptree，write_json将ptree输出为字符串或文件流。其余的都是对ptree的操作。
+
+json文件
+
+```js
+{
+  "code": 0,
+  "images":
+  [
+    {
+      "url": "fmn057/20111221/1130/head_kJoO_05d9000251de125c.jpg"
+    },
+    {
+      "url": "fmn057/20111221/1130/original_kJoO_05d9000251de125c.jpg"
+    }
+  ]
+}
+```
+
+
+
+```cpp
+//头文件
+#include <boost/property_tree/ptree.hpp>
+#include <boost/property_tree/json_parser.hpp>
+
+int ParseJson()  
+{  
+  std::string str = "{\"code\":0,\"images\":[{\"url\":\"fmn057/20111221/1130/head_kJoO_05d9000251de125c.jpg\"},{\"url\":\"fmn057/20111221/1130/original_kJoO_05d9000251de125c.jpg\"}]}";  
+  using namespace boost::property_tree;  
+  
+  std::stringstream ss(str);  
+  ptree pt;  
+  try{      
+    read_json(ss, pt);  
+  }  
+  catch(ptree_error & e) {  
+    return 1;   
+  }  
+  
+  try{  
+    int code = pt.get<int>("code");   // 得到"code"的value   
+    ptree image_array = pt.get_child("images");  // get_child得到数组对象   
+      
+    // 遍历数组   
+    BOOST_FOREACH(boost::property_tree::ptree::value_type &v, image_array)  
+    {  
+      std::stringstream s;  
+      write_json(s, v.second);  
+      std::string image_item = s.str();  
+    }  
+  }  
+  catch (ptree_error & e)  
+  {  
+    return 2;  
+  }  
+  return 0;  
+}  
+```
+
+构造json
+
+```cpp
+int InsertJson()  
+{  
+  std::string str = "{\"code\":0,\"images\":[{\"url\":\"fmn057/20111221/1130/head_kJoO_05d9000251de125c.jpg\"},{\"url\":\"fmn057/20111221/1130/original_kJoO_05d9000251de125c.jpg\"}]}";  
+  using namespace boost::property_tree;  
+  
+  std::stringstream ss(str);  
+  ptree pt;  
+  try{      
+    read_json(ss, pt);  
+  }  
+  catch(ptree_error & e) {  
+    return 1;   
+  }  
+  
+  // 修改/增加一个key-value，key不存在则增加   
+  pt.put("upid", "00001");  
+  
+  // 插入一个数组   
+  ptree exif_array;  
+  ptree array1, array2, array3;  
+  array1.put("Make", "NIKON");  
+  array2.put("DateTime", "2011:05:31 06:47:09");  
+  array3.put("Software", "Ver.1.01");  
+  exif_array.push_back(std::make_pair("", array1));  
+  exif_array.push_back(std::make_pair("", array2));  
+  exif_array.push_back(std::make_pair("", array3));  
+  
+//   exif_array.push_back(std::make_pair("Make", "NIKON"));   
+//   exif_array.push_back(std::make_pair("DateTime", "2011:05:31 06:47:09"));   
+//   exif_array.push_back(std::make_pair("Software", "Ver.1.01"));   
+  
+  pt.put_child("exifs", exif_array);  
+  std::stringstream s2;  
+  write_json(s2, pt);  
+  std::string outstr = s2.str();  
+  
+  return 0;  
+}  
+```

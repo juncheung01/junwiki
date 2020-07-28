@@ -1,0 +1,13 @@
+created: 20200726115002448
+creator: jun
+modified: 20200726115805653
+modifier: jun
+tags: 工作 论文 python numpy
+title: python 列表通过numpy一维转变为二维
+tmap.id: 4d474469-2a45-4f79-92e3-6ba201492e0d
+type: text/vnd.tiddlywiki
+
+```python
+z=[]
+np.array(z).reshape(50,50)#50*50的数组
+```

@@ -1,0 +1,22 @@
+created: 20200712055231405
+creator: jun
+modified: 20200721004250699
+modifier: jun
+tags: 收集 技术细节
+title: pandoc相关
+tmap.id: f6811de0-b5c0-475b-ab55-99b788c1e8e7
+type: text/vnd.tiddlywiki
+
+老早就听说过的文件转换瑞士军刀工具。开始用，记下相关的注意事项。
+
+windows版直接下载，注意加上环境变量就行了。
+
+`--version`可以查看pandoc默认目录，在这个目录下放置style.css 和 latex模板等，不用每次转换格式的时候带上这些文件
+
+使用`xelatex`，pdflatex不支持中文，选择字体，选择`latex模板`，
+
+一个命令示例：
+
+```bash
+pandoc in.md -o out.pdf --latex-engine=xelatex --template=pm-template.latex
+```

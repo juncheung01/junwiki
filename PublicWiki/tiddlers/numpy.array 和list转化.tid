@@ -1,0 +1,13 @@
+created: 20200726115812693
+creator: jun
+modified: 20200726115931210
+modifier: jun
+tags: numpy python 论文
+title: numpy.array 和list转化
+tmap.id: 6a980d8d-51bc-430f-8afa-f0dc54243d93
+type: text/vnd.tiddlywiki
+
+```python
+lst=[]
+np.array(lst).reshape(2,4).tolist()
+```

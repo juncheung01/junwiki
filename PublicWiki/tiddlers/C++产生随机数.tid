@@ -1,0 +1,26 @@
+created: 20200722025557660
+creator: jun
+modified: 20200722025640893
+modifier: jun
+tags: c++语法
+title: C++产生随机数
+tmap.id: 77f459cf-88b5-439e-8517-1e3aff098f6a
+type: text/vnd.tiddlywiki
+
+
+```cpp
+#include <iostream>
+#include <stdlib.h>
+#include <time.h> 
+using namespace std; 
+int main()
+{ 
+srand((unsigned)time(NULL)); 
+for(int i = 0; i < 10;i++ ) 
+        cout << rand() << '\t'; 
+cout << endl; 
+return 0;
+}
+```
+srand设置随机数种子
+

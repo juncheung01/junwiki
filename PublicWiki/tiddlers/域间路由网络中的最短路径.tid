@@ -1,0 +1,9 @@
+created: 20200716133843280
+creator: jun
+modified: 20200716133948281
+modifier: jun
+title: 域间路由网络中的最短路径
+tmap.id: 36117f9f-9f4a-4219-935f-95520bb07cbe
+type: text/vnd.tiddlywiki
+
+是不是可以认为求两个节点间最短路径的复杂度是不到$$O(n)$$.

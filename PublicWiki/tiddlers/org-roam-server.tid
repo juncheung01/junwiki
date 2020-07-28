@@ -1,0 +1,12 @@
+created: 20200707112730791
+creator: jun
+modified: 20200721121229240
+modifier: jun
+tags: 收集
+title: org-roam-server
+tmap.id: 090547f6-194d-49ac-9d1e-af7bccd0c3e3
+type: text/vnd.tiddlywiki
+
+https://github.com/org-roam/org-roam-server
+
+是emacs的插件，用来实现[[roam research]]类似的功能。

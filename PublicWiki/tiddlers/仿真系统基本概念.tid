@@ -1,0 +1,16 @@
+created: 20200723115651832
+creator: jun
+modified: 20200723115652465
+modifier: jun
+tags: 20200723-基于逻辑进程范式的网络建模与仿真-林忠伟
+title: 仿真系统基本概念
+tmap.id: 034cdc52-ff44-4679-a7f1-36130790553d
+type: text/vnd.tiddlywiki
+
+! 仿真系统基本概念
+
+粒度：行为、功能、信号、元器件、更细粒度。
+
+概念模型（专家评审，validation，已经从物理层面上抽象过一次了）->计算机模型（verification）->模型确认(accreditation认证)
+
+仿真、时间（实时、超实时、欠实时）、人（物）在回路的仿真

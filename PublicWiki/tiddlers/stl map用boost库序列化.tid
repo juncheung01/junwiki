@@ -1,0 +1,41 @@
+created: 20200721082625824
+creator: jun
+modified: 20200721082751870
+modifier: jun
+tags: c++序列化
+title: stl map用boost库序列化
+tmap.id: 7e4d0927-61ae-474b-a5e4-c1b429bb5059
+type: text/vnd.tiddlywiki
+
+```cpp
+#include "stdafx.h"
+
+
+#include <boost/serialization/map.hpp> 
+#include <boost/archive/text_oarchive.hpp>
+#include <boost/archive/text_iarchive.hpp>
+#include <string> 
+#include <sstream>
+
+
+int _tmain(int argc, _TCHAR* argv[])
+{
+std::map<int, int> m_accountMap;
+m_accountMap[1] = 1;
+m_accountMap[2] = 2;
+std::string s;
+std::ostringstream temp;
+boost::archive::text_oarchive oa(temp);
+oa<<m_accountMap;
+s = temp.str();
+
+
+std::istringstream iss(s);//通过构造函数对istringstream类进行赋值，可以将一个字符串变量的值传递给
+boost::archive::text_iarchive ia(iss);
+std::map<int, int> newMap;
+ia >> newMap;
+
+
+return 0;
+}
+```

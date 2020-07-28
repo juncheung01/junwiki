@@ -1,0 +1,65 @@
+created: 20200707010321921
+creator: jun
+modified: 20200722001002962
+modifier: jun
+tags: [[BGL(boost graph library)]]
+title: visitor
+tmap.id: e8f7ead3-22df-428a-8801-7b67681ddc6f
+type: text/vnd.tiddlywiki
+
+* 一个简单的visitor
+
+```cpp
+struct close_paren : public base_visitor< close_paren >
+{
+    typedef on_finish_vertex event_filter;
+    template < class Vertex, class Graph > void operator()(Vertex v, Graph&)
+    {
+        std::cout << v << ")";
+    }
+};
+```
+使用的时候：
+
+```cpp
+visitor(make_dfs_visitor(std::make_pair(open_paren(), close_paren())))
+```
+
+或者
+
+```cpp
+visitor(vis)//vis 是visitor的对象
+```
+
+在类中定义成员变量：
+
+```cpp
+template < typename TimeMap >
+class dfs_time_visitor : public default_dfs_visitor
+{
+    typedef typename property_traits< TimeMap >::value_type T;
+
+public:
+    dfs_time_visitor(TimeMap dmap, TimeMap fmap, T& t)
+    : m_dtimemap(dmap), m_ftimemap(fmap), m_time(t)
+    {
+    }
+    template < typename Vertex, typename Graph >
+    void discover_vertex(Vertex u, const Graph& g) const
+    {
+        put(m_dtimemap, u, m_time++);
+    }
+    template < typename Vertex, typename Graph >
+    void finish_vertex(Vertex u, const Graph& g) const
+    {
+        put(m_ftimemap, u, m_time++);
+    }
+    TimeMap m_dtimemap;
+    TimeMap m_ftimemap;
+    T& m_time;
+};
+```
+
+传递参数，可以直接读写全局变量（每个节点的祖先，子孙，peers）
+
+最后的做法是这样的，在finish_vertex中检查整个的发现节点序列，找到当前节点第一次出现的地方，从这个位置到最后末尾的节点都是这棵树上的节点。

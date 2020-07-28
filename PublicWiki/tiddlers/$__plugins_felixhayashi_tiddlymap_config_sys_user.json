@@ -14,9 +14,11 @@
     "jsonIndentation": "1",
     "alwaysAddNodeIdToViewFilter": "true",
     "editNodeOnCreate": "false",
-    "singleClickMode": "false",
+    "singleClickMode": "true",
     "nodeFilterNeighbours": "false",
     "editorMenuBar.showNeighScopeButton": "true",
     "editorMenuBar.showRasterMenuButton": "true",
-    "editorMenuBar.showScreenshotButton": "true"
+    "editorMenuBar.showScreenshotButton": "true",
+    "defaultView": "Live View",
+    "raster": "10"
 }

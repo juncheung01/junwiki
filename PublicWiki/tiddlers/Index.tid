@@ -1,15 +1,12 @@
 created: 20200613073129250
 creator: jun
-modified: 20200614031520475
+modified: 20200724102802823
 modifier: jun
 tags: 
 title: Index
+tmap.edges: {}
 tmap.id: 6cd2b2ca-aed2-425f-9a7d-70afeaf396c4
 type: text/vnd.tiddlywiki
 
-<<reuse-tiddler "快速创建新笔记按钮">>
-
----
 <$macrocall $name="locator-view" baseTitle=<<currentTiddler>> />
 
----

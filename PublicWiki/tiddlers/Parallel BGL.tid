@@ -1,0 +1,12 @@
+created: 20200712124718422
+creator: jun
+modified: 20200722001002744
+modifier: jun
+tags: [[BGL(boost graph library)]]
+title: Parallel BGL
+tmap.id: ec3378b3-aae6-4762-901d-d4d7f5dfc12d
+type: text/vnd.tiddlywiki
+
+PBGL包含文件的时候首先包含serialization，PBGL在类unix系统运行更好[[stackoverflow上的一个问题|https://stackoverflow.com/questions/46126335/parallel-bgl-dijkstra-shortest-paths]]
+
+[[网络上的一个求助帖|https://groups.google.com/forum/#!topic/boost-list/A_IOeEGWrWY]]

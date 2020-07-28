@@ -1,0 +1,63 @@
+created: 20200722075309644
+creator: jun
+modified: 20200722075329123
+modifier: jun
+tags: 
+title: string转int
+tmap.id: bfce706a-cee9-40cf-a8c8-2dee35da815d
+type: text/vnd.tiddlywiki
+
+1.可以使用std::stoi/stol/stoll等等函数  
+Example:
+
+```cpp
+// stoi example
+#include <iostream>   // std::cout
+#include <string>     // std::string, std::stoi
+ 
+int main ()
+{
+  std::string str_dec = "2001, A Space Odyssey";
+  std::string str_hex = "40c3";
+  std::string str_bin = "-10010110001";
+  std::string str_auto = "0x7f";
+ 
+  std::string::size_type sz;   // alias of size_t
+ 
+  int i_dec = std::stoi (str_dec,&sz);
+  int i_hex = std::stoi (str_hex,nullptr,16);
+  int i_bin = std::stoi (str_bin,nullptr,2);
+  int i_auto = std::stoi (str_auto,nullptr,0);
+ 
+  std::cout << str_dec << ": " << i_dec << " and [" << str_dec.substr(sz) << "]\n";
+  std::cout << str_hex << ": " << i_hex << '\n';
+  std::cout << str_bin << ": " << i_bin << '\n';
+  std::cout << str_auto << ": " << i_auto << '\n';
+ 
+  return 0;
+}
+```
+
+Output:  
+
+```cpp
+2001, A Space Odyssey: 2001 and [, A Space Odyssey]
+40c3:  16579
+-10010110001: -1201
+0x7f: 127
+```
+
+2.采用标准库中atoi函数,对于其他类型也都有相应的标准库函数，比如浮点型atof(),long型atol()等等  
+
+```cpp
+string s = "12"; 
+int a = atoi(s.c_str());
+```
+
+3.采用sstream头文件中定义的字符串流对象来实现转换
+
+```cpp
+istringstream is("12"); //构造输入字符串流，流的内容初始化为“12”的字符串 
+int i; 
+is >> i; //从is流中读入一个int整数存入i中
+```

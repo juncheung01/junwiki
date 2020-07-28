@@ -1,0 +1,23 @@
+created: 20200722023320643
+creator: jun
+modified: 20200725113051907
+modifier: jun
+title: 代码使用配置文件
+tmap.id: da2b673e-5015-4d11-99ae-12b8ff06d39c
+type: text/vnd.tiddlywiki
+
+类似这样的配置文件：
+
+```
+topofile ""
+aspathfile ""
+c2pfile ""
+outputfile ""
+threads 100
+steps 20
+maxbeta 0.5
+recover 0
+israndom 1
+```
+
+[[解析程序配置文件]]

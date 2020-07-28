@@ -1,0 +1,23 @@
+created: 20200701012642017
+creator: jun
+modified: 20200701012729626
+modifier: jun
+tags: c++语法
+title: map的insert返回值
+tmap.id: 69287eed-8e44-4a8f-85e9-35bb2e3c6a92
+type: text/vnd.tiddlywiki
+
+关于map容器的insert成员的返回值说明：
+
+（1）map对象中一个给定键只对应一个元素。如果试图插入的元素所对应的键已在容器中，则insert将不做任何操作；
+
+（2）含有一个或一对迭代器形参的insert函数版本如：m.insert(beg,end)，并不说明明是否有或有多少个元素插入到容器中。
+
+（3）但是，带有一个键-值pair形参的insert版本将返回一个值：包含一个迭代器和一个bool值得pair对象，其中迭代器指向map中具有相应键的元素，而bool值则表示是否插入了该元素。如果该键不在容器中，则插入新元素，且bool值为ture；如果该键已在容器中，则其关联的值保持不变，返回bool值为false。在这两种情况下，迭代器都将指向具有给定键的元素。
+
+
+所以在看见pair<map<string,vector<string> >::iterator,bool> ret =    children.insert(make_pair(surname,chd));这么长的一句话时，不要害怕，细细分析。
+
+ 
+
+pair里面的两个元素的类型分别是：map<string,vector<string> >::iterator，和bool。这个pair类型变量ret是insert操作的返回值。前面这个迭代器类型的元素是指向map中具有相应键的元素。

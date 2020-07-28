@@ -1,0 +1,3 @@
+　副词only置于句首， 强调方式状语、 条件状语、 地点状语、 时间状语等状语时， 主句要进行部分倒装。如果被only所强调的状语为状语从句， 该状语从句不倒装， 只对主句进行倒装。例如： Only in a big city was it possible to buy a new wheelchair. 只有在大城市里才能买到新轮椅。// Only when we had studied the data again did we realize that there was a mistake. 只有当我们再次研究了这些数据的时候， 我们才意识到出了一个错。// Only because there were some cancelled bookings did he get some tickets in the end. 一些预订被取消了， 他才得以买到了几张票。
+
+　　注意： 如果放于句首的only所修饰的不是状语时， 该句不用倒装。例如： Only John can save me. 只有约翰能够救我。Only some of the children passed the examination. 只有几个孩子通过了考试。

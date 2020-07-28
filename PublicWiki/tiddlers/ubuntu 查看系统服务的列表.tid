@@ -1,0 +1,10 @@
+created: 20200620013725337
+creator: jun
+modified: 20200620013738758
+modifier: jun
+tags: 技术细节
+title: ubuntu 查看系统服务的列表
+tmap.id: 44b240ef-3960-4791-90c0-7039a3fc3dfe
+type: text/vnd.tiddlywiki
+
+service --status-all
