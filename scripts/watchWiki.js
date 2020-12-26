@@ -4,7 +4,7 @@ const execSync = require('child_process').execSync;
 
 const wikiFolderName = require('../package.json').name;
 const privateWikiName = require('../package.json').privateWikiName;
-const COMMIT_INTERVAL = (1000 * 60 * 60) / 2;
+const COMMIT_INTERVAL = (1000 * 60 * 5);
 
 const tiddlyWikiRepo = path.join(path.dirname(__filename), '..');
 module.exports.tiddlyWikiRepo = tiddlyWikiRepo;
