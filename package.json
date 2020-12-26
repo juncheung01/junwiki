@@ -1,5 +1,5 @@
 {
-  "port": 5013,
+  "port": 8888,
   "name": "PublicWiki",
   "userName": "jun",
   "privateWikiName": "private-MyTiddlyWiki",
